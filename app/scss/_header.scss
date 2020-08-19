@@ -1,0 +1,14 @@
+.header__top-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 122px;
+}
+
+.menu__item{
+    display: inline-block;
+}
+
+.menu__item+.menu__item{
+    padding-left: 50px;
+}
