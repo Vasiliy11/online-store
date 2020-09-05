@@ -80,10 +80,7 @@
         transition: all .3s;
         font-weight: 400;
         padding: 15px 0 14px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: relative;
         &:before{
             content: "";
             width: 0;
@@ -96,7 +93,7 @@
             transition: all .3s;
         }
         &:hover{
-            color: #000;
+            color: #1c62cd;
             &::before{
                 width: 100%;
                 left: 0;
@@ -107,6 +104,6 @@
 }
 
 .header__bottom{
-    margin-bottom: 70px;
+    margin-bottom: 78px;
 }
 
