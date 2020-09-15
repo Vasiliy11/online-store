@@ -16,7 +16,15 @@ $(function(){
     });
 
     $('.product-item__favorite').on('click', function(){
-        $('.product-item__favorite').toggleClass('product-item__favorite--active')
+        $(this).toggleClass('product-item__favorite--active')
+    });
+
+    $('.product-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        prevArrow: '<button class="slick-arrows product-arrowsprev slick-arrows--prev"><img src="./images/arrow-black-left.svg" alt=""></button>' ,   
+        nextArrow: '<button class="slick-arrows product-arrowsnext slick-arrows--next"><img src="./images/arrow-black-right.svg" alt=""></button>'    
     });
 
 });
