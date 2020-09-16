@@ -1,3 +1,7 @@
+.products{
+    margin-bottom: 80px;
+}
+
 .products__title{
     font-weight: 700;
     font-size: 25px;
@@ -193,7 +197,7 @@
 
 .products__more{
     text-align: center;
-    margin: 35px 0 80px;
+    margin: 35px 0 0;
     &-link{
         line-height: 18px;
         letter-spacing: 0.12em;
@@ -202,4 +206,8 @@
         padding: 16px 43px;
         background: #f0f0f4;
     }
+}
+
+.banner{
+    margin-bottom: 72px;
 }
