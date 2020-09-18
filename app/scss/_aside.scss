@@ -1,0 +1,24 @@
+.aside-filter{
+    &__tabs{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__tab{
+        font-family: 'SFProDisplay-Bold', sans-serif;
+        font-weight: 700;
+        color: #c4c4c4;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        width: 50%;
+        &.tab--active{
+            color: #2f3035;
+            & span{
+                display: inline-block;
+                padding-bottom: 7px;
+                border-bottom: 2px solid #1c62cd;
+            }
+        }
+    }
+}
