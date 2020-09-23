@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online shop</title>
-    <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <header class="header">
@@ -118,7 +122,7 @@
                     <button>еще</button>
                 </div>
                 <div class="catalog__filter-btn">
-                    <select name="" id="">
+                    <select class="filter-style">
                         <option value=""></option>
                         <option value=""></option>
                         <option value=""></option>
@@ -159,10 +163,36 @@
                         </div>
                         <div class="tabs-container">
                             <div class="tabs-content aside-filter__tabs-content tabs-content--active">
-                                
+                                <form class="aside-filter__form">
+                                    <ul class="aside-filter__list">
+                                        <li class="aside-filter__item-drop">
+                                            <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Наличие</p>
+                                            <div class="aside-filter__content">
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-label">
+                                                        <input class="filter-style" type="checkbox">
+                                                        В наличие
+                                                    </label>
+                                                </div>
+
+                                                <div class="aside-filter__content-box">
+                                                    <label class="aside-filter__content-label">
+                                                        <input class="filter-style" type="checkbox">
+                                                        Под заказ
+                                                    </label>
+                                                </div>
+
+
+                                            </div>
+                                        </li>
+                                        <li class="aside-filter__item-drop"></li>
+                                        <li class="aside-filter__item-drop"></li>
+                                        <li class="aside-filter__item-list"></li>
+                                    </ul>
+                                </form>
                             </div>
                             <div class="tabs-content aside-filter__tabs-content">
-                                
+                                content-2
                             </div>
                         </div>
                     </div>
@@ -471,6 +501,9 @@
     </footer>
 
 <script src="js/libs.min.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.rateyo.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
