@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online shop</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <title>Product</title>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <header class="header">
@@ -121,23 +125,23 @@
                     <h1 class="product-card__title">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h1>
                     <p class="product-card__code">Код товара: 	366666-2 </p>
                     <div class="product-card__buttons">
-                        <button class="product-card__icon-favorite"><img src="images/favorite.svg" alt=""></button>
-                        <button class="product-card__icon-comparison"><img src="images/comparison.svg" alt=""></button>
-                        <div class="rate">
-
-                        </div>
+                        <a class="product-card__icon-favorite" href="#"><img src="images/favorite.svg" alt=""></a>
+                        <a class="product-card__icon-comparison" href="#"><img src="images/comparison.svg" alt=""></a>
+                        <a class="rate" href="#">
+                            <div class="rate-yo" data-rateyo-rating='4'></div>
+                        </a>
                     </div>
                     <div class="tabs-wrapper product-card__tabs">
                         <div class="tabs">
-                            <a class="tab product-card__tab tab--active" href="#">
+                            <a class="tab product-card__tab tab--active" href="#product-1">
                                 Характеристики
                             </a>
-                            <a class="tab product-card__tab " href="#">
+                            <a class="tab product-card__tab " href="#product-2">
                                 Наличие в магазине
                             </a>
                         </div>
                         <div class="tabs-container">
-                            <div class="tabs-content product-card__tab-content tabs-content--active">
+                            <div id="product-1" class="tabs-content product-card__tab-content tabs-content--active">
                                 <ul class="product-card__list">
                                     <li class="product-card__item">
                                         <div class="product-card__item-left">Производитель</div>
@@ -161,9 +165,11 @@
                                     </li>
                                 </ul>
                                 <a href="#" class="product-card__more">Показать еще</a>
-                                <button class="product-card__btn">купить</button>
+                                <div class="product-card__btn">
+                                    <button>купить</button>
+                                </div>
                             </div>
-                            <div class="tabs-content product-card__tab-content">
+                            <div id="product-2" class="tabs-content product-card__tab-content">
                                 content-2
                             </div>
                         </div>
@@ -230,6 +236,9 @@
     </footer>
 
 <script src="js/libs.min.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.rateyo.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
