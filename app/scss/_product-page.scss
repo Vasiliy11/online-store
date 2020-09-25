@@ -1,0 +1,89 @@
+.product-card{
+    margin-bottom: 80px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img-box{
+        width: 500px;
+        padding-top: 64px;
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+        color: #2F3035;
+        position: relative;
+        &:before{
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.12em;
+            padding: 13px 25px;
+            border-radius: 3px;
+        }
+    }
+    &__price-old{
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        opacity: 0.6;
+        display: inline-block;
+        margin-bottom: 6px;
+        background-image: url('../images/old-line.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__price-new{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 17px;
+    }
+    &__link{
+        font-family: 'SFProDisplay-Regular', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #1C62CD;
+        border-bottom: 1px solid #1C62CD;
+    }
+    &__content{
+        width: 570px;
+    }
+    &__title{
+        font-family: 'SFProDisplay-Bold', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: #2F3035; 
+        margin-bottom: 10px;
+    }
+    &__code{
+        font-size: 15px;
+        line-height: 18px;
+        color: #2F3035;
+        opacity: 0.6;
+        margin-bottom: 22px;
+    }
+    &__buttons{
+        margin-bottom: 50px;
+    }
+    &__tab{
+        font-size: 20px;
+        line-height: 24px;
+        opacity: 0.6;
+        color: #2F3035;
+        padding-bottom: 5px;
+        padding-right: 17px;
+        & + .product-card__tab{
+            padding-left: 17px;
+        }
+        &.tab--active{
+            font-weight: 700;
+            opacity: 1;
+            font-family: 'SFProDisplay-Bold', sans-serif;
+            border-bottom: 2px solid #1C62CD;
+            background-color: transparent;
+            border-radius: 0;
+
+        }
+    }
+}

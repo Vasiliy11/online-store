@@ -11,7 +11,7 @@ let gulp = require('gulp'),
 
 gulp.task('clean', async function(){
   del.sync('dist')
-})
+});
 
 gulp.task('scss', function(){
   return gulp.src('app/scss/**/*.scss')
@@ -26,7 +26,7 @@ gulp.task('scss', function(){
     .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('css', function(){
+gulp.task('css', async function(){
   return gulp.src([
     'node_modules/normalize.css/normalize.css',
     'node_modules/slick-carousel/slick/slick.css',
@@ -46,7 +46,7 @@ gulp.task('script', function(){
   .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('js', function(){
+gulp.task('js', async function(){
   return gulp.src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js'
@@ -57,7 +57,7 @@ gulp.task('js', function(){
     .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', async function() {
   browserSync.init({
       server: {
           baseDir: "app/"
@@ -78,11 +78,11 @@ gulp.task('export', function(){
   let BuildFonts = gulp.src('app/fonts/**/*.*')
     .pipe(gulp.dest('dist/fonts'));
 
-  let BuildImg = gulp.src('app/img/**/*.*')
-    .pipe(gulp.dest('dist/img'));   
+  let BuildImg = gulp.src('app/images/**/*.*')
+    .pipe(gulp.dest('dist/images'));   
 });
 
-gulp.task('watch', function(){
+gulp.task('watch', async function(){
   gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'));
   gulp.watch('app/*.html', gulp.parallel('html'))
   gulp.watch('app/js/*.js', gulp.parallel('script'))
