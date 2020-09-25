@@ -300,3 +300,109 @@
         color: #BDBEC2;
     }
 }
+
+// Стилізація акцій
+
+.btn-checked{
+    & .aside-filter__content{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    & .aside-filter__content-box{
+        width: auto;
+    }
+    & .aside-filter__content-label{
+        position: relative;
+        // background-color: #f0f0f4;
+        height: 25px;
+        width: 63px;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.07em;
+        font-weight: 700;
+        color: #c4c4c4;
+    }
+    & .jq-checkbox{
+        width: 63px;
+        height: 25px;
+        background-color: #f0f0f4;
+        border: none;
+        &.checked{
+            background-color: #1c62cd;
+            color: #fff;
+            & ~ .btn-checked__text{
+                color: #fff;
+            }
+            & .jq-checkbox__div{
+                display: none;
+            }
+        }
+    }
+    &__text{
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translate(-63%, 5%);
+        text-transform: uppercase;
+    }
+}
+
+// Стилізація кнопок
+
+.filter-btn__send{
+    background: #f0f0f4;
+    padding: 16px 85px;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.12em;
+    color: #bdbec2;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+    &--active{
+        background: #1c62cd;
+        color: #fff;
+    }
+}
+
+.aside-filter__item-btn{
+    text-align: center;
+}
+
+.filter__extra{
+    font-size: 13px;
+    line-height: 16px;
+    position: relative;
+    padding-right: 29px;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 15px;
+    &:after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 5px;
+        background-image: url(../images/arrow-down.svg);
+        width: 12px;
+        height: 8px;
+    }
+    &-content{
+        display: none;
+    }
+    &.filter__item-drop--active:after{
+        transform: rotate(-180deg);
+    }
+}
+
+.filter-btn__reset{
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    font-size: 13px;
+    line-height: 16px;
+    display: inline-block;
+    border-bottom: 1px solid #c4c4c4;
+    color: #c4c4c4;
+    cursor: pointer;
+}

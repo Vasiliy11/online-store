@@ -37,6 +37,7 @@
     text-align: center;
     padding: 52px 20px 31px;
     transition: all .3s;
+    width: 100%;
     &__hover-text{
         padding: 18px 21px;
         background-color: rgba(255,255,255,.9);
@@ -122,6 +123,8 @@
     &__title{
         font-weight: 400;
         padding: 14px 0 25px;
+        font-size: 18px;
+        line-height: 21px;
     }
     &--sale:before{
         content: "SALE";
