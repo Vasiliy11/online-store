@@ -214,3 +214,16 @@
 .banner{
     margin-bottom: 72px;
 }
+
+.product-slider{
+    & .slick-dots{
+        bottom: -30px;
+    }
+    & .slick-dots button{
+        background-color: #c4c4c4;
+    }
+    & .slick-dots .slick-active button{
+        background-color: #1c62cd;
+    }
+}
+

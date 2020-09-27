@@ -1,3 +1,10 @@
+@media(max-width: 1300px){
+    .products__more{
+        margin-top: 60px;
+    }
+}
+
+
 @media(max-width: 1200px){
     .banner-section__slider-img{
         min-height: 380px;
@@ -11,6 +18,9 @@
     }
     .categories__inner{
         justify-content: space-around;
+    }
+    .banner__link img{
+        width: 100%;
     }
 }
 
@@ -78,7 +88,7 @@
         margin-bottom: 25px;
     }
     .mobile-overflow{
-        width: 750px;
+        width: 850px;
     }
     .tabs-wrapper{
         overflow-x: auto;
@@ -115,6 +125,9 @@
     }
     .search__content-form{
         position: relative;
+    }
+    .banner__link img{
+        min-height: 90px;
     }
 }
 
