@@ -263,6 +263,7 @@
     }
     .footer__top-drop{
         position: relative;
+        pointer-events: auto;
         &:after{
             content: '';
             position: absolute;
